@@ -1,0 +1,46 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+.Title-proj{
+
+  font-size: 2rem;
+}
+
+.nav{
+  background-color: black;
+  color: white;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding:  0 1rem;
+  font-size: 1.7rem;
+}
+
+.nav ul{
+  padding:0;
+  margin:0;
+  list-style: none;
+  display:flex;
+  gap:1rem;
+
+}
+
+.nav a{
+  color: inherit;
+  text-decoration: none;
+
+}
+
+.container {
+  margin: 1rem;
+  text-align: center;
+}
+
+
+
+
