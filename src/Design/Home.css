@@ -1,7 +1,119 @@
-/* Home.css */
-.HomeBody {
-    background-color: #f0f0f0;
-    padding: 20px;
-    height: 100%;
-  }
+.home {
+  position: relative; /* Ensure the header is the positioning context */
+}
 
+.Title-Vid, .Description-header {
+  position: absolute; /* Position both elements absolutely */
+  left: 20px; /* Adjust left positioning as needed */
+  color: #177569; /* Change color of the elements */
+}
+
+.Title-Vid {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  top: 100px; 
+  z-index: 2; 
+}
+
+.Title-Vid span{
+  background-color: #177569;
+  color: white; 
+  border-bottom-right-radius: 20px;
+  padding-right: 10px;
+}
+
+.Description-header {
+  position: absolute; 
+  top: 200px; 
+  left: 20px; 
+  width: 35%; 
+  font-size: 1.2rem; 
+  color: white; 
+  z-index: 1; 
+  box-shadow: 0 2px 4px rgba(23, 117, 105, 0.2); 
+}
+
+.Description-header .highlight {
+  background-color: #177569;
+  display: inline-block;
+}
+
+
+.content-backup {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 1.6rem 1rem;
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 10px;
+  z-index: 1;
+  display: flex;
+  flex-direction: row; /* Arrange sections horizontally */
+  gap: 20px;
+  height: 15%;
+  border-bottom: 5px solid #177569;
+  transition: transform 0.3s ease, opacity 0.3s ease; 
+  opacity: 1; /* Initial opacity */
+  pointer-events: auto; /* Allow pointer events */
+}
+
+.content-backup.fade-out {
+  opacity: 0; /* Fade out the section */
+  pointer-events: none; /* Disable pointer events */
+}
+
+.content-backup {
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition properties */
+}
+
+.content-backup.floating {
+  transform: translate(-50%, calc(-50% - 300px)); /* Move up by 50px */
+  opacity: 0; /* Make the section transparent */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition properties */
+}
+
+
+.content-backup section {
+  width: 200px;
+  display: flex;
+  flex-direction: column; /* Elements inside sections are stacked vertically */
+  align-items: center; /* Center content horizontally */
+
+}
+
+.content-backup section img {
+  margin-bottom: 10px; /* Add margin to the bottom of the image for spacing */
+}
+
+
+
+.content-backup section h1 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.content-backup section p {
+  font-size: 1rem;
+  color: black;
+  text-align: center;
+}
+
+.content-backup section img {
+  margin-bottom: 10px;
+  transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.content-backup section img:hover {
+  transform: translateY(-20px); /* Move the image up slightly on hover */
+}
+
+
+.belowContent{
+  background-color: #177569;  
+  height: 1000px;
+  width: 100%;
+}

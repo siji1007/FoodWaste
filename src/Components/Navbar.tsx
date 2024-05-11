@@ -5,17 +5,20 @@ import React from 'react';
 function Navbar() {
   return (
     <nav className='nav'>
-        <a href='/' className='Title-proj'>FoodWaste</a>
-        <ul>
-            <li>
-            <a href='/Home' style={{ marginRight: '1rem' }}>Home</a>
-            <a href='/About' style={{ marginRight: '1rem' }}>About</a>
-            <a href='/Contact' style={{ marginRight: '1rem' }}>Contact</a>
-            <a href='/Signin' style={{ marginRight: '1rem' }}>Signin</a>
-            </li>
-        </ul>
+        <div className="site-logo">
+        <a href="/" className="logo-link">FoodWaste</a>
+      </div>
+
+      <ul className="navigation">
+        <li className="link"><a href="/Home">Home</a></li>
+        <li className="link"><a href="/About">About us</a></li>
+        <li className="link"><a href="/Contact">Contact</a></li>
+        <li className="link"><a href="/Signin">Signin</a></li>
 
 
+      </ul>
+
+   
     </nav>
   );
 }

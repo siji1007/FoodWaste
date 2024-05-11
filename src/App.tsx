@@ -34,8 +34,10 @@ function App() {
 
   return (
     <>
-    <Navbar/>
-    {component}
+      <Navbar /> {/* Render the Navbar component */}
+      <div style={{ paddingTop: '10px' }}> {/* Add padding to create space for the fixed Navbar */}
+        {component} {/* Render the specified component */}
+      </div>
     </>
   );
 }
