@@ -2,7 +2,7 @@
 
 * {
   box-sizing: border-box;
- 
+  border: 2px solid red;
 }
 
 body {
@@ -15,7 +15,7 @@ body {
 
 html {
   scroll-behavior: smooth;
-}
+} 
 
 .nav {
   background-color: #177569;

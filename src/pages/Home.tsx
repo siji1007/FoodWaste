@@ -56,8 +56,8 @@ const Home: React.FC = () => {
 
       
       <div className='Card-contents' >
-
         <div className='float-Cards' style={{ opacity: isFloating ? 1 : 0, transition: 'opacity 0.5s ease' , display: 'flex', justifyContent: 'space-between' }}>
+
         <div className='card'>
         <img src='src\assets\cards-images\Customers.png' alt='Customer image' style={{ width: '100%' }} />
         
