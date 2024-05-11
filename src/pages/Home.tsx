@@ -54,8 +54,8 @@ const Home: React.FC = () => {
       </div>
 
       <div className='belowContent'>
-        
 
+        
 
       </div>
     </header>
