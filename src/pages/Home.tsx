@@ -9,7 +9,7 @@ const Home: React.FC = () => {
       const scrollPosition = window.scrollY;
 
       if (contentBackup) {
-        if (scrollPosition > 100) {
+        if (scrollPosition > 10) {
           setIsFloating(true);
         } else {
           setIsFloating(false);
@@ -53,10 +53,36 @@ const Home: React.FC = () => {
         </section>
       </div>
 
-      <div className='belowContent'>
 
+      
+      <div className='Card-contents' >
+
+        <div className='float-Cards' style={{ opacity: isFloating ? 1 : 0, transition: 'opacity 0.5s ease' , display: 'flex', justifyContent: 'space-between' }}>
+        <div className='card'>
+        <img src='src\assets\cards-images\Customers.png' alt='Customer image' style={{ width: '100%' }} />
         
+          <h3>CUSTOMER</h3>
+          <p>This is the customer description</p>
+          <a href="" className='btn'>Read More</a>
+        </div>
 
+        <div className='card'>
+        <img src='src\assets\cards-images\Customers.png' alt='Customer image' style={{ width: '100%' }} />
+        
+          <h3>CUSTOMER</h3>
+          <p>This is the customer description</p>
+          <a href="" className='btn'>Read More</a>
+        </div>
+
+        <div className='card'>
+        <img src='src\assets\cards-images\Customers.png' alt='Customer image' style={{ width: '100%' }} />
+      
+          <h3>CUSTOMER</h3>
+          <p>This is the customer description</p>
+          <a href="" className='btn'>Read More</a>
+        </div>
+
+      </div>
       </div>
     </header>
   );
